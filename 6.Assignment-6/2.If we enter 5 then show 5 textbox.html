@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function run(){
+                let a=document.getElementById("t1")
+                let a1=a.value
+                for(let i=1;i<=parseInt(a1);i++){
+                    let b=document.createElement("input")
+                    b.setAttribute("type","text")
+                    document.body.append(b)
+
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <br>
+        <br>
+        <input type="button" value="Ok" onclick="run()">
+    </body>
+</html>

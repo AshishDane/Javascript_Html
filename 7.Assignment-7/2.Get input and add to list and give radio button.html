@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let typ="number"
+            function r1(){
+                typ="number"
+
+            }
+
+            function r2()
+            {
+                typ="Character"
+            }
+            function run(){
+                let a=document.getElementById("t1")
+                let a1=a.value
+                let b=document.getElementById("ol1")
+                let c=document.createElement("li")
+                if(typ=="Character"){
+                    c.setAttribute("type","A")
+                }
+                c.innerText=a1
+                b.append(c)
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <br>
+        <input type="radio" name="type" value="number" onclick="r1()"><label>Number</label>
+        <input type="radio" name="type" value="character" onclick="r2()"><label>Character</label>
+        <br>
+        <input type="button" value="Ok" onclick="run()">
+        <br>
+        <ol id="ol1">
+
+        </ol>
+
+    </body>
+</html>

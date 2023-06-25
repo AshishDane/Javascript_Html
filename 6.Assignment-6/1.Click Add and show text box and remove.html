@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <script>
+            function add(){
+            let a=document.createElement("input")
+            a.setAttribute("type","text")
+            a.setAttribute("id","t1")
+            document.body.append(a)
+        }
+        function remove(){
+            let b=document.getElementById("t1")
+            setTimeout(() =>b.remove(),2000)
+        }
+
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Remove" onclick="remove()">
+    </body>
+</html>

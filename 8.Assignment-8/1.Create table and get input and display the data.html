@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <script>
+        let gender = "Male"
+        function r1() {
+            gender = "Female"
+        }
+        function run() {
+            let a = document.getElementById("t1")
+            let b = document.getElementById("t2")
+            let c = document.getElementById("t3")
+            let a1 = a.value
+            let b1 = b.value
+            let c1 = c.value
+            let table = document.getElementById("tab2")
+            let row = document.createElement("tr")
+            let co1 = document.createElement("td")
+            let co2 = document.createElement("td")
+            let co3 = document.createElement("td")
+            let co4 = document.createElement("td")
+            co1.innerHTML = a1
+            co2.innerHTML = b1
+            co3.innerHTML = c1
+            co4.innerText = gender
+            row.append(co1)
+            row.append(co2)
+            row.append(co3)
+            row.append(co4)
+            table.append(row)
+        }
+
+    </script>
+    <style>
+        table{
+            margin-left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tab1" border="2">
+        <th>Student Information</th>
+        <tr>
+            <td>
+                <label>Name : </label><input type="text" id="t1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Email : </label><input type="email" id="t2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Phone : </label><input type="number" id="t3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender : </label><input type="radio" name="ok" value="Male" id="t4"><label>Male</label>
+                <input type="radio" name="ok" value="Female" id="t4" onclick="r1()"><label>Female</label>
+            </td>
+        </tr>
+        <tr style="text-align: center;">
+            <td>
+                <input type="button" value="Ok" onclick="run()">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table id="tab2" border="2">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Gender</th>
+    </table>
+
+
+</body>
+
+</html>

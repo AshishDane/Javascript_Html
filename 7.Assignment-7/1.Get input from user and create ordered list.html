@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <script>
+            function run(){
+                let a=document.getElementById("t1")
+                let a1=a.value
+                let b=document.getElementById("ol1")
+                let c=document.createElement("li")
+                c.innerText=a1
+                b.append(c)
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <br>
+        <br>
+        <input type="button" value="Ok" onclick="run()">
+        <br>
+        <ol id="ol1">
+
+        </ol>
+    </body>
+</html>

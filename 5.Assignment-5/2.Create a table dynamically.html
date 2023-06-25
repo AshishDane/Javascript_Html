@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <script>
+            function run(){
+                let a=document.getElementById("t1")
+                let b=document.getElementById("t2")
+                let c=document.getElementById("t3")
+                let d=document.getElementById("t4")
+                let e=document.getElementById("t5")
+                let f=document.getElementById("t6")
+                let a1=a.value
+                let b1=b.value
+                let c1=c.value
+                let d1=d.value
+                let e1=e.value
+                let f1=f.value
+                let table=document.getElementById("Tab1")
+                let row=document.createElement("tr")
+                let co1=document.createElement("td")
+                let co2=document.createElement("td")
+                let co3=document.createElement("td")
+                let co4=document.createElement("td")
+                let co5=document.createElement("td")
+                let co6=document.createElement("td")
+                co1.innerText=a1
+                co2.innerText=b1
+                co3.innerText=c1
+                co4.innerText=d1
+                co5.innerText=e1
+                co6.innerText=f1
+                row.append(co1)
+                row.append(co2)
+                row.append(co3)
+                row.append(co4)
+                row.append(co5)
+                row.append(co6)
+                table.append(row)
+
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <label>Time/Date</label><input type="text" id="t1">
+        <br>
+        <label>City</label><input type="text" id="t2">
+        <br>
+        <label>Country</label><input type="text" id="t3">
+        <br>
+        <label>State</label><input type="text" id="t4">
+        <br>
+        <label>Shape</label><input type="text" id="t5">
+        <br>
+        <label>Comment</label><input type="text" id="t6">
+        <br>
+        <br>
+        <input type="button" value="Add" onclick="run()">
+        <br>
+        <br>
+        <Table id="Tab1" border="3">
+            <th>Time/Date</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>Shape</th>
+            <th>Comment</th>
+
+        </Table>
+    </body>
+</html>
